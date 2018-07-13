@@ -48,7 +48,15 @@
 
     // Set these variables to their DOM elements
 
-    let coffeeImage;
+    let coffeeImage = document.querySelector("#coffee-image");
+    coffeeImage.setAttribute('src', 'static/coffee_beans.jpg');
+
+    function makeCoffee(){
+    	coffeeImage.setAttribute('src', 'static/coffee_mug.jpg');
+    }
+
+    coffeeImage.addEventListener('click', makeCoffee);
+    
     let revenueMessage;
 
     // use this JavaScript object in further study step
